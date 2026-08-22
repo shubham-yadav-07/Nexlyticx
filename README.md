@@ -31,6 +31,14 @@ An AI-powered analytics platform with a conversational copilot. Upload your data
 
 ---
 
+<div align="center">
+  
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=NexlyticX;Next-Gen+AI+Analytics;Where+Data+Finds+Its+Voice)](https://git.io/typing-svg)
+
+</div>
+
+---
+
 # Problem Statement
 
 Extracting meaningful insights from data remains difficult for non-technical users — traditional analytics tools (Excel, Tableau) demand statistical expertise, while AI chatbots like ChatGPT process only data samples and often produce unreliable results without explaining their significance or trustworthiness. There is a need for an intelligent platform that lets users query their complete dataset in natural language and returns accurate, statistically-grounded insights explained in plain language — covering not just what the data shows, but why it matters and how much to trust it.
