@@ -1,5 +1,4 @@
-# Nexlyticx
-Next-generation AI-powered data analytics platform
+# Nexlyticx :- Next-generation AI-powered data analytics platform
 
 # Problem Statement
 
