@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 NexlyticX
+#  NexlyticX
 
 ### *Next-Generation AI-Powered Data Analytics Platform*
 
@@ -31,13 +31,6 @@ An AI-powered analytics platform with a conversational copilot. Upload your data
 
 ---
 
-<div align="center">
-  
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=NexlyticX;Next-Gen+AI+Analytics;Where+Data+Finds+Its+Voice)](https://git.io/typing-svg)
-
-</div>
-
----
 
 # Problem Statement
 
