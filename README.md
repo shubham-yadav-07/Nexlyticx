@@ -1,55 +1,21 @@
 <div align="center">
 
-# 🧠 NexlyticX
+#  NexlyticX
 
 ### *AI-Powered Intelligence for a Data-Driven Future*
 
+**Where Data Finds Its Voice**
+
 <br>
-
-
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-
-
-
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-
-
-
-
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-
-
-
-
 ![AI Powered](https://img.shields.io/badge/AI-Powered-FF6F61?style=for-the-badge&logo=openai&logoColor=white)
 
-
-
-
-
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
-
-
-
-
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=flat-square)
-
-
-
-
 ![Stars](https://img.shields.io/github/stars/yourusername/nexlyticx?style=flat-square&color=gold)
-
-
-
-<br>
-
-[
-
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&width=650&lines=Upload+Data.+Ask+Questions.+Get+Answers.;Automated+EDA+%26+ETL+in+Seconds;AI+Copilot+for+Real+Data+Analysis;Insights+You+Can+Actually+Trust.)
-
-](https://git.io/typing-svg)
 
 <br>
 
@@ -62,7 +28,6 @@ An AI-powered analytics platform with a conversational copilot. Upload your data
 </div>
 
 <br>
-
 ---
 
 
