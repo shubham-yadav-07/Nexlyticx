@@ -28,8 +28,6 @@ An AI-powered analytics platform with a conversational copilot. Upload your data
 </div>
 
 <br>
----
-
 
 # Problem Statement
 
