@@ -190,3 +190,7 @@ already-computed results, saved chart dashboards, team workspaces.
 ## License
 
 MIT, see `LICENSE`.
+
+## Author
+
+Shubham Yadav
