@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Sign in to NexlyticX</title>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/styles.css">
+<script src="/js/theme.js"></script>
+</head>
+<body>
+<div class="auth-shell">
+  <aside class="auth-aside">
+    <a class="brand" href="/">Nexlytic<span>X</span></a>
+    <div>
+      <h2>Your data, explained in plain English.</h2>
+      <p>Create a free account to keep your datasets, pick up where you left off, and open your work from any device.</p>
+      <ul class="auth-points">
+        <li><span data-icon="check"></span>Datasets saved privately to your account</li>
+        <li><span data-icon="check"></span>Clean-up plans, EDA, charts and reports in one place</li>
+        <li><span data-icon="check"></span>Delete any dataset, or your account, whenever you like</li>
+      </ul>
+    </div>
+    <small style="color:#8F93B3">© 2026 NexlyticX</small>
+  </aside>
+
+  <main class="auth-main">
+    <div class="auth-top">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode"><span data-icon="moon" data-class="icon-moon"></span><span data-icon="sun" data-class="icon-sun"></span></button>
+    </div>
+    <div class="auth-card">
+      <div class="auth-tabs" role="tablist">
+        <button type="button" role="tab" id="tab-login">Sign in</button>
+        <button type="button" role="tab" id="tab-signup">Create account</button>
+      </div>
+      <h1 id="auth-title">Welcome back</h1>
+      <p class="sub" id="auth-sub">Sign in to open your saved datasets.</p>
+
+      <div class="form-error" id="auth-error" role="alert" hidden></div>
+      <form id="auth-form" novalidate>
+        <div class="field" id="field-name" hidden><label for="name">Your name</label><input class="input" id="name" name="name" type="text" autocomplete="name" maxlength="80"></div>
+        <div class="field"><label for="email">E-mail</label><input class="input" id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+        <div class="field"><label for="password">Password</label>
+          <div class="pw-wrap"><input class="input" id="password" name="password" type="password" autocomplete="current-password" maxlength="128" required><button type="button" id="pw-toggle" aria-label="Show password">Show</button></div>
+        </div>
+        <p class="form-hint" id="pw-hint" hidden>At least 8 characters. A short phrase works well.</p>
+        <button class="btn btn-primary" id="auth-submit" type="submit">Sign in</button>
+      </form>
+      <div class="auth-alt" id="guest-alt"><div class="divider">or</div><a href="/app">Continue as a guest</a><br><span class="muted" style="font-size:12px">Guest data is temporary and deleted after a period of inactivity.</span></div>
+    </div>
+  </main>
+</div>
+<script src="/js/core.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

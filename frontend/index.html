@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexlyticX: analyse any CSV in plain English</title>
+<meta name="description" content="Upload a CSV and get a clean-up plan, exploratory charts, a data trust score and a printable report. Ask questions in plain English and get answers calculated with real statistics.">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/styles.css">
+<script src="/js/theme.js"></script>
+</head>
+<body>
+
+<nav class="topnav" aria-label="Primary">
+  <a href="/" class="brand">Nexlytic<span>X</span></a>
+  <div class="topnav-links">
+    <a class="hide-sm" href="#features">Features</a>
+    <a class="hide-sm" href="#how">How it works</a>
+    <a class="hide-sm" href="#privacy">Privacy</a>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode"><span data-icon="moon" data-class="icon-moon"></span><span data-icon="sun" data-class="icon-sun"></span></button>
+    <span id="nav-auth" class="row" style="gap:8px;flex-wrap:nowrap">
+      <a class="btn btn-ghost btn-sm" href="/login">Log in</a>
+      <a class="btn btn-primary btn-sm" href="/signup">Get started</a>
+    </span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-badge"><span class="dot"></span>Analyse any CSV in minutes, no code</div>
+  <h1>Where data finds its voice.</h1>
+  <p class="lede">Upload a CSV and get a clean-up plan, exploratory charts, a data trust score and a printable report. Then ask questions in plain English. Every answer is calculated from your data with real statistics.</p>
+  <div class="hero-ctas">
+    <a class="btn btn-primary" href="/app">Launch the app</a>
+    <a class="btn btn-secondary" href="/app?sample=1">Try it with sample data</a>
+  </div>
+
+  <div class="scene-wrap" aria-hidden="true">
+    <div class="scene" id="scene">
+      <div class="scene-stage" id="stage">
+        <div class="scene-shadow"></div>
+        <div class="mock-main">
+          <div class="mock-side"><div class="mdot"></div><div class="mline" style="width:70%"></div><div class="mline" style="width:85%"></div><div class="mline" style="width:60%"></div><div class="mline" style="width:75%"></div></div>
+          <div class="mock-body"><div class="mock-top"></div>
+            <div class="mock-grid">
+              <div class="mock-card"><div class="mock-bar" style="height:60%"></div></div>
+              <div class="mock-card"><div class="mock-bar" style="height:40%;background:var(--brand)"></div></div>
+              <div class="mock-card"><div class="mock-bar" style="height:75%"></div></div>
+              <div class="mock-card"><div class="mock-bar" style="height:30%;background:var(--amber)"></div></div>
+            </div></div>
+        </div>
+        <div class="float-card fc-health"><div class="fc-label">Data trust score</div><div class="fc-value">87.4<span style="font-size:13px;color:var(--muted)"> / 100</span></div><div class="fc-sub">2 issues to review</div></div>
+        <div class="float-card fc-copilot"><div class="fc-q">“What affects Outcome?”</div><div class="fc-a">Glucose is the strongest link (r = <em>+0.47</em>), and it is statistically significant.</div><div class="fc-chip">Statistical confidence 99%</div></div>
+        <div class="float-card fc-agents"><div class="fc-label">Detected</div>
+          <div class="agent-row"><span class="agent-dot" style="background:var(--amber)"></span>Hidden zeros</div>
+          <div class="agent-row"><span class="agent-dot" style="background:var(--teal)"></span>3 outlier columns</div>
+          <div class="agent-row"><span class="agent-dot" style="background:var(--brand)"></span>0 duplicates</div></div>
+        <div class="float-card fc-chart"><div class="fc-label">Revenue by month</div>
+          <svg viewBox="0 0 160 56" width="100%" height="56" preserveAspectRatio="none"><polyline points="0,42 27,38 54,46 80,30 107,18 134,24 160,8" fill="none" stroke="#1F9E82" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="features">
+  <div class="section-head"><h2>Everything between a raw CSV and a decision</h2><p>One workspace for the whole job, so you stop juggling spreadsheets, notebooks and chart tools.</p></div>
+  <div class="features">
+    <div class="feature"><div class="ic"><span data-icon="filter"></span></div><h3>Clean &amp; prep</h3><p>Finds missing values, duplicates, outliers and hidden placeholder zeros, then fixes them in a few clicks without touching your original file.</p></div>
+    <div class="feature"><div class="ic"><span data-icon="search"></span></div><h3>Explore (EDA)</h3><p>Column profiles, distributions, a correlation heatmap and a raw data browser, generated automatically.</p></div>
+    <div class="feature"><div class="ic"><span data-icon="chart"></span></div><h3>Visualize</h3><p>Histograms, bars, scatter plots and lines from any columns. Download any chart as a PNG.</p></div>
+    <div class="feature"><div class="ic"><span data-icon="chat"></span></div><h3>Copilot</h3><p>Ask "What affects Outcome?" or "Compare BMI by Outcome". Answers come from real statistical tests, with the evidence shown.</p></div>
+    <div class="feature"><div class="ic"><span data-icon="shield"></span></div><h3>Trust score</h3><p>A transparent 0 to 100 score that shows how far to trust a dataset, and exactly why.</p></div>
+    <div class="feature"><div class="ic"><span data-icon="doc"></span></div><h3>Reports</h3><p>A clean, printable report you can save as a PDF and share with your team or your professor.</p></div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="section-head"><h2>From file to answer in three steps</h2></div>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3>Upload your CSV</h3><p>Drag a file in. NexlyticX profiles every column and scores the data before you ask anything.</p></div>
+    <div class="step"><div class="step-num">2</div><h3>Fix what matters</h3><p>Review the issues it found and apply one-click fixes. You always get a new copy; the original stays intact.</p></div>
+    <div class="step"><div class="step-num">3</div><h3>Ask and share</h3><p>Ask questions in plain English, explore the charts, then export a report to share.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="trust-band">
+    <div><h3>Built on real statistics, not guesses</h3><p>Many "AI analytics" tools let a language model improvise numbers. NexlyticX computes every figure with pandas and SciPy on your full dataset, and only then phrases it in plain language.</p></div>
+    <ul>
+      <li>Hypothesis tests show their p-value; plain calculations are labelled "Exact calculation".</li>
+      <li>Hidden problems, like zeros standing in for missing values, are caught and explained.</li>
+      <li>A single serious issue stops a dataset from being graded "Good", however high the average.</li>
+      <li>Every score and finding can be traced back to the data behind it.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="privacy">
+  <div class="section-head"><h2>Your data stays yours</h2><p>Plain answers to the questions people ask before uploading a file.</p></div>
+  <div class="features">
+    <div class="feature"><h3>Guest sessions are temporary</h3><p>Without an account, files are held in server memory only, never written to disk, and deleted after a period of inactivity (2 hours by default).</p></div>
+    <div class="feature"><h3>Accounts keep what you choose</h3><p>When you are signed in, your datasets are saved to your private storage so you can return to them. Delete any dataset, or your entire account, at any time.</p></div>
+    <div class="feature"><h3>No tracking, no third parties</h3><p>No analytics scripts, no ads and no external fonts. Passwords are stored as salted PBKDF2 hashes, never in plain text.</p></div>
+  </div>
+</section>
+
+<section class="closing">
+  <h2>Analyse your first dataset today</h2>
+  <p>No setup and no code. Try it as a guest in seconds, or create a free account to keep your work.</p>
+  <a class="btn btn-primary" href="/app">Launch the app</a>
+</section>
+
+<footer class="site"><span>© 2026 NexlyticX</span><span><a href="#features">Features</a> &nbsp;&nbsp; <a href="#privacy">Privacy</a> &nbsp;&nbsp; <a href="/login">Log in</a></span></footer>
+
+<script src="/js/core.js"></script>
+<script src="/js/landing.js"></script>
+</body>
+</html>
