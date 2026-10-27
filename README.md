@@ -22,7 +22,7 @@ only then phrases the result:
 
 | Workspace (numeric-only data, hidden zeros caught) | Cleaning with before / after score |
 |---|---|
-| ![Workspace](https://nexlyticx.onrender.com/assets/screenshots-workspace.png) | ![Cleaning](https://nexlyticx.onrender.com/assets/screenshot-cleaning.png) |
+| ![Workspace](https://nexlyticx.onrender.com/assets/screenshots-workspace.png) | ![Cleaning](https://nexlyticx.onrender.com/assets/screenshots-cleaning.png) |
 | **Trust score** | **Correlation heatmap** |
 | ![Trust score](https://nexlyticx.onrender.com/assets/screenshot-trust-score.png) | ![Correlations](https://nexlyticx.onrender.com/assets/screenshot-correlations.png) |
 | **Printable report (Save as PDF)** | **Dark mode** |
