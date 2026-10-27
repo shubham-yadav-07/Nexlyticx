@@ -4,7 +4,9 @@
 *trust score* and a printable report, then ask questions and get answers calculated with real statistics
 (pandas + SciPy), never improvised by a language model.
 
-![Landing page](docs/screenshots/landing.png)
+**Live demo: https://nexlyticx.onrender.com/**
+
+![Landing page](https://nexlyticx.onrender.com/assets/screenshot-landing.png)
 
 ## Why it is different
 
@@ -20,11 +22,11 @@ only then phrases the result:
 
 | Workspace (numeric-only data, hidden zeros caught) | Cleaning with before / after score |
 |---|---|
-| ![Workspace](docs/screenshots/workspace.png) | ![Cleaning](docs/screenshots/cleaning.png) |
+| ![Workspace](https://nexlyticx.onrender.com/assets/screenshot-workspace.png) | ![Cleaning](https://nexlyticx.onrender.com/assets/screenshot-cleaning.png) |
 | **Trust score** | **Correlation heatmap** |
-| ![Trust score](docs/screenshots/trust-score.png) | ![Correlations](docs/screenshots/correlations.png) |
+| ![Trust score](https://nexlyticx.onrender.com/assets/screenshot-trust-score.png) | ![Correlations](https://nexlyticx.onrender.com/assets/screenshot-correlations.png) |
 | **Printable report (Save as PDF)** | **Dark mode** |
-| ![Report](docs/screenshots/report.png) | ![Dark mode](docs/screenshots/dark-mode.png) |
+| ![Report](https://nexlyticx.onrender.com/assets/screenshot-report.png) | ![Dark mode](https://nexlyticx.onrender.com/assets/screenshot-dark-mode.png) |
 
 ## Features
 
@@ -160,6 +162,7 @@ nexlyticx-app/
 ├── frontend/                       # no build step
 │   ├── index.html, login.html, dashboard.html
 │   ├── css/                        # design system + bundled fonts
+│   ├── assets/                     # favicon, fonts, README screenshots
 │   └── js/                         # core, charts (SVG), copilot, app router, views/
 ├── sample_data/                    # demo dataset
 ├── Dockerfile, render.yaml, Procfile, run.ps1
