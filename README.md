@@ -6,7 +6,7 @@
 
 **Live demo: https://nexlyticx.onrender.com/**
 
-![Landing page](https://nexlyticx.onrender.com/assets/screenshot-landing.png)
+![Landing page](https://nexlyticx.onrender.com/assets/screenshots-landing.png)
 
 ## Why it is different
 
