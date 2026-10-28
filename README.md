@@ -140,34 +140,58 @@ upload size/row/column limits, security headers.
 Not implemented: e-mail verification, password reset, 2FA, per-user storage quotas beyond dataset count,
 antivirus scanning of uploads (files are parsed as CSV only, never executed).
 
-## Project structure
 
-```
+## 📁 Project Structure
+
+```text
 nexlyticx-app/
-â”œâ”€â”€ backend/
-â”‚   â”œâ”€â”€ main.py                     # app, middleware (sessions, CSRF, limits, CSP), routes
-â”‚   â”œâ”€â”€ app/
-â”‚   â”‚   â”œâ”€â”€ config.py               # all env-driven settings
-â”‚   â”‚   â”œâ”€â”€ db.py                   # SQLite: users, login sessions, dataset metadata
-â”‚   â”‚   â”œâ”€â”€ storage.py              # guest (memory) + member (disk) dataset store
-â”‚   â”‚   â”œâ”€â”€ core/                   # security (hashing), rate limiter, deps, JSON sanitising
-â”‚   â”‚   â”œâ”€â”€ routers/                # auth.py, datasets.py, copilot.py
-â”‚   â”‚   â””â”€â”€ services/
-â”‚   â”‚       â”œâ”€â”€ ingest.py           # robust CSV reading
-â”‚   â”‚       â”œâ”€â”€ analysis.py         # profiling, trust score, EDA, charts, cleaning (pandas/SciPy)
-â”‚   â”‚       â”œâ”€â”€ copilot_engine.py   # question -> statistical analysis -> plain-English answer
-â”‚   â”‚       â””â”€â”€ report.py           # printable HTML report
-â”‚   â”œâ”€â”€ tests/                      # 37 tests: API, isolation, cleaning, copilot, auth, security
-â”‚   â””â”€â”€ requirements*.txt
-â”œâ”€â”€ frontend/                       # no build step
-â”‚   â”œâ”€â”€ index.html, login.html, dashboard.html
-â”‚   â”œâ”€â”€ css/                        # design system + bundled fonts
-â”‚   â”œâ”€â”€ assets/                     # favicon, fonts, README screenshots
-â”‚   â””â”€â”€ js/                         # core, charts (SVG), copilot, app router, views/
-â”œâ”€â”€ sample_data/                    # demo dataset
-â”œâ”€â”€ Dockerfile, render.yaml, Procfile, run.ps1
-â””â”€â”€ .github/workflows/tests.yml     # CI
+├── backend/
+│   ├── main.py                 # Application entry point, middleware and routes
+│   ├── app/
+│   │   ├── config.py           # Environment-based configuration
+│   │   ├── db.py               # SQLite users, sessions and dataset metadata
+│   │   ├── storage.py          # Guest and member dataset storage
+│   │   ├── core/               # Security, rate limiting, dependencies and JSON sanitising
+│   │   ├── routers/
+│   │   │   ├── auth.py         # Authentication endpoints
+│   │   │   ├── datasets.py     # Dataset endpoints
+│   │   │   └── copilot.py      # Analytics copilot endpoints
+│   │   └── services/
+│   │       ├── ingest.py       # CSV ingestion and parsing
+│   │       ├── analysis.py     # Profiling, EDA, cleaning and trust score
+│   │       ├── copilot_engine.py # Statistical analysis and plain-English answers
+│   │       └── report.py      # Printable HTML reports
+│   ├── tests/                  # API, auth, security and analytics tests
+│   └── requirements*.txt       # Python dependencies
+│
+├── frontend/                   # Frontend without a build step
+│   ├── index.html              # Landing page
+│   ├── login.html              # Login page
+│   ├── dashboard.html          # Analytics dashboard
+│   ├── css/                    # Styles, design system and fonts
+│   ├── assets/                 # Favicon, fonts and README screenshots
+│   └── js/                     # Core logic, charts, copilot and views
+│
+├── sample_data/                # Sample dataset for demonstrations
+├── .github/
+│   └── workflows/
+│       └── tests.yml           # Automated testing workflow
+├── Dockerfile                  # Docker configuration
+├── render.yaml                 # Render deployment configuration
+├── Procfile                    # Process configuration
+├── run.ps1                     # PowerShell startup script
+└── README.md                   # Project documentation
 ```
+
+### Directory Overview
+
+- **Backend:** FastAPI APIs, authentication, secure storage and data analysis.
+- **Frontend:** HTML, CSS and JavaScript interface.
+- **Services:** CSV ingestion, exploratory analysis, data cleaning, copilot responses and report generation.
+- **Tests:** Automated checks for application functionality and security.
+- **Sample Data:** Example dataset for testing analytics features.
+- **GitHub Actions:** Automated test workflow for continuous integration.
+
 
 ## Tests
 
