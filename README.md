@@ -22,11 +22,11 @@ only then phrases the result:
 
 | Workspace (numeric-only data, hidden zeros caught) | Cleaning with before / after score |
 |---|---|
-| ![Workspace](https://nexlyticx.onrender.com/assets/screenshot-workspace.png) | ![Cleaning](https://nexlyticx.onrender.com/assets/screenshot-cleaning.png) |
+| ![Workspace](https://nexlyticx.onrender.com/assets/screenshots-workspace.png) | ![Cleaning](https://nexlyticx.onrender.com/assets/screenshots-cleaning.png) |
 | **Trust score** | **Correlation heatmap** |
-| ![Trust score](https://nexlyticx.onrender.com/assets/screenshot-trust-score.png) | ![Correlations](https://nexlyticx.onrender.com/assets/screenshot-correlations.png) |
+| ![Trust score](https://nexlyticx.onrender.com/assets/screenshots-trust-score.png) | ![Correlations](https://nexlyticx.onrender.com/assets/screenshots-correlations.png) |
 | **Printable report (Save as PDF)** | **Dark mode** |
-| ![Report](https://nexlyticx.onrender.com/assets/screenshot-report.png) | ![Dark mode](https://nexlyticx.onrender.com/assets/screenshot-dark-mode.png) |
+| ![Report](https://nexlyticx.onrender.com/assets/screenshots-report.png) | ![Dark mode](https://nexlyticx.onrender.com/assets/screenshots-dark-mode.png) |
 
 ## Features
 
