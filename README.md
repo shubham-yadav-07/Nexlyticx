@@ -1,4 +1,4 @@
-# NexlyticX
+﻿# NexlyticX
 
 **Analyse any CSV in plain English.** Upload a file and get a clean-up plan, exploratory charts, a data
 *trust score* and a printable report, then ask questions and get answers calculated with real statistics
@@ -6,7 +6,7 @@
 
 **Live demo: https://nexlyticx.onrender.com/**
 
-![Landing page](https://nexlyticx.onrender.com/assets/screenshots-landing.png)
+![Landing page](frontend/assets/screenshots/landing.png)
 
 ## Why it is different
 
@@ -22,11 +22,11 @@ only then phrases the result:
 
 | Workspace (numeric-only data, hidden zeros caught) | Cleaning with before / after score |
 |---|---|
-| ![Workspace](https://nexlyticx.onrender.com/assets/screenshots-workspace.png) | ![Cleaning](https://nexlyticx.onrender.com/assets/screenshots-cleaning.png) |
+| ![Workspace](frontend/assets/screenshots/workspace.png) | ![Cleaning](frontend/assets/screenshots/cleaning.png) |
 | **Trust score** | **Correlation heatmap** |
-| ![Trust score](https://nexlyticx.onrender.com/assets/screenshots-trust-score.png) | ![Correlations](https://nexlyticx.onrender.com/assets/screenshots-correlations.png) |
+| ![Trust score](frontend/assets/screenshots/trust-score.png) | ![Correlations](frontend/assets/screenshots/correlations.png) |
 | **Printable report (Save as PDF)** | **Dark mode** |
-| ![Report](https://nexlyticx.onrender.com/assets/screenshots-report.png) | ![Dark mode](https://nexlyticx.onrender.com/assets/screenshots-dark-mode.png) |
+| ![Report](frontend/assets/screenshots/report.png) | ![Dark mode](frontend/assets/screenshots/dark-mode.png) |
 
 ## Features
 
@@ -144,29 +144,29 @@ antivirus scanning of uploads (files are parsed as CSV only, never executed).
 
 ```
 nexlyticx-app/
-├── backend/
-│   ├── main.py                     # app, middleware (sessions, CSRF, limits, CSP), routes
-│   ├── app/
-│   │   ├── config.py               # all env-driven settings
-│   │   ├── db.py                   # SQLite: users, login sessions, dataset metadata
-│   │   ├── storage.py              # guest (memory) + member (disk) dataset store
-│   │   ├── core/                   # security (hashing), rate limiter, deps, JSON sanitising
-│   │   ├── routers/                # auth.py, datasets.py, copilot.py
-│   │   └── services/
-│   │       ├── ingest.py           # robust CSV reading
-│   │       ├── analysis.py         # profiling, trust score, EDA, charts, cleaning (pandas/SciPy)
-│   │       ├── copilot_engine.py   # question -> statistical analysis -> plain-English answer
-│   │       └── report.py           # printable HTML report
-│   ├── tests/                      # 37 tests: API, isolation, cleaning, copilot, auth, security
-│   └── requirements*.txt
-├── frontend/                       # no build step
-│   ├── index.html, login.html, dashboard.html
-│   ├── css/                        # design system + bundled fonts
-│   ├── assets/                     # favicon, fonts, README screenshots
-│   └── js/                         # core, charts (SVG), copilot, app router, views/
-├── sample_data/                    # demo dataset
-├── Dockerfile, render.yaml, Procfile, run.ps1
-└── .github/workflows/tests.yml     # CI
+â”œâ”€â”€ backend/
+â”‚   â”œâ”€â”€ main.py                     # app, middleware (sessions, CSRF, limits, CSP), routes
+â”‚   â”œâ”€â”€ app/
+â”‚   â”‚   â”œâ”€â”€ config.py               # all env-driven settings
+â”‚   â”‚   â”œâ”€â”€ db.py                   # SQLite: users, login sessions, dataset metadata
+â”‚   â”‚   â”œâ”€â”€ storage.py              # guest (memory) + member (disk) dataset store
+â”‚   â”‚   â”œâ”€â”€ core/                   # security (hashing), rate limiter, deps, JSON sanitising
+â”‚   â”‚   â”œâ”€â”€ routers/                # auth.py, datasets.py, copilot.py
+â”‚   â”‚   â””â”€â”€ services/
+â”‚   â”‚       â”œâ”€â”€ ingest.py           # robust CSV reading
+â”‚   â”‚       â”œâ”€â”€ analysis.py         # profiling, trust score, EDA, charts, cleaning (pandas/SciPy)
+â”‚   â”‚       â”œâ”€â”€ copilot_engine.py   # question -> statistical analysis -> plain-English answer
+â”‚   â”‚       â””â”€â”€ report.py           # printable HTML report
+â”‚   â”œâ”€â”€ tests/                      # 37 tests: API, isolation, cleaning, copilot, auth, security
+â”‚   â””â”€â”€ requirements*.txt
+â”œâ”€â”€ frontend/                       # no build step
+â”‚   â”œâ”€â”€ index.html, login.html, dashboard.html
+â”‚   â”œâ”€â”€ css/                        # design system + bundled fonts
+â”‚   â”œâ”€â”€ assets/                     # favicon, fonts, README screenshots
+â”‚   â””â”€â”€ js/                         # core, charts (SVG), copilot, app router, views/
+â”œâ”€â”€ sample_data/                    # demo dataset
+â”œâ”€â”€ Dockerfile, render.yaml, Procfile, run.ps1
+â””â”€â”€ .github/workflows/tests.yml     # CI
 ```
 
 ## Tests
@@ -197,3 +197,4 @@ MIT, see `LICENSE`.
 ## Author
 
 Shubham Yadav
+
